@@ -78,7 +78,7 @@ const config: Config = {
       title: 'My window',
       logo: {
         alt: 'My window Logo',
-        src: 'img/logo.jpg',
+        src: 'img/logo.svg',
       },
       items: [
         {
