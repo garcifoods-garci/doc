@@ -1,0 +1,334 @@
+---
+title: E-commerce Website High-Level Feature Document
+sidebar_position: 2
+---
+
+# Raala Kithul E-commerce Website High-Level Feature Document (HLFD)
+
+## 1. Project Overview
+
+### 1.1 Business Objectives
+
+Raala Kithul requires a modern e-commerce website to strengthen its digital presence, showcase its authentic Sri Lankan kithul-based product range, and enable direct-to-consumer online sales. The platform should support brand storytelling, product discovery, promotions, and scalable digital growth.
+
+### 1.2 Target Audience
+
+- Health-conscious consumers
+- Young digital-first customers
+- Families looking for natural sweeteners and traditional food products
+- Sri Lankan local market customers
+- Potential export and diaspora customers in future phases
+- Retail, gifting, and wellness-focused buyers
+
+### 1.3 Project Goals
+
+- Build a strong branded online storefront for Raala Kithul
+- Allow customers to browse, search, and purchase products easily
+- Enable the business to run promotions and marketing campaigns efficiently
+- Provide secure checkout and reliable order processing
+- Create a scalable platform for future expansion, subscriptions, loyalty, and international commerce
+
+### 1.4 Expected Business Outcomes
+
+- Increased direct online sales
+- Improved brand awareness and customer trust
+- Better customer retention through account and marketing features
+- Increased campaign conversion from social media and digital advertising
+- Improved operational visibility across orders, stock, and promotions
+
+## 2. User Roles
+
+| User Role | Description | Key Capabilities |
+|---|---|---|
+| Guest Visitor | Unregistered visitor browsing the website | View pages, browse catalogue, search products, add to cart, checkout as guest |
+| Registered Customer | Customer with an account | Manage profile, place orders, track orders, maintain wishlist, save addresses |
+| Administrator | Full system administrator | Manage users, products, promotions, settings, reports, site content |
+| Store Manager | Operations-focused business user | Manage products, stock, orders, fulfilment, categories, pricing |
+| Marketing Manager | Campaign and growth user | Manage banners, campaigns, coupons, featured products, blog and integrations |
+
+## 3. Website Pages
+
+| Page | Description | Business Value | Priority | User Roles | Dependencies |
+|---|---|---|---|---|---|
+| Home | Main landing page highlighting brand, products, offers, and calls to action | Drives first impressions and conversions | Must Have | All | CMS, banner management, featured products |
+| About Us | Brand story, heritage, sourcing, authenticity, and mission | Builds trust and brand identity | Must Have | All | CMS |
+| Shop | Main product listing page | Enables product browsing and sales | Must Have | All | Catalogue, search, filters |
+| Product Details | Individual product page with detailed information | Supports purchase decisions | Must Have | All | Product management |
+| Product Categories | Category landing pages for grouped products | Improves navigation and merchandising | Must Have | All | Category management |
+| Promotions | Dedicated offers and discount page | Supports campaigns and conversions | Should Have | All | Promotion engine |
+| Shopping Cart | Review selected items before checkout | Reduces friction in purchase flow | Must Have | All | Cart engine |
+| Checkout | Secure page for order completion | Enables revenue generation | Must Have | Guest, Customer | Payments, shipping, tax |
+| Customer Login/Register | Authentication and account creation | Supports repeat purchasing | Must Have | Guest, Customer | User management |
+| My Account | Account dashboard for customers | Improves retention and self-service | Must Have | Customer | Customer account module |
+| Order History | View past orders and statuses | Improves customer transparency | Must Have | Customer | Order management |
+| Wishlist | Save products for future purchase | Supports remarketing and repeat sales | Should Have | Customer | Account module |
+| Contact Us | Enquiry form, contact details, map | Supports customer trust and support | Must Have | All | CMS, email, maps |
+| FAQs | Frequently asked questions | Reduces support overhead | Should Have | All | CMS |
+| Blog / Recipes | Content hub for recipes, education, and SEO | Supports organic traffic and engagement | Should Have | All | Blog/CMS |
+| Privacy Policy | Legal and compliance content | Supports compliance and trust | Must Have | All | CMS |
+| Terms & Conditions | Terms of use, purchase, and delivery policies | Supports legal protection | Must Have | All | CMS |
+
+## 4. Product Catalogue Features
+
+| Feature Name | Description | Business Value | Priority | User Roles | Dependencies |
+|---|---|---|---|---|---|
+| Product Categories | Organize products by type such as syrup, jaggery, treacle, snack items, and gift packs | Improves findability and merchandising | Must Have | All, Admin, Store Manager | Category management |
+| Product Search | Keyword-based search across products | Helps users locate products quickly | Must Have | All | Search indexing |
+| Product Filtering | Filter by category, price, flavour, dietary preference, availability, or pack size | Improves product discovery | Must Have | All | Product attributes |
+| Product Sorting | Sort by price, popularity, newest, featured, and ratings | Improves shopping convenience | Should Have | All | Catalogue listing |
+| Product Images | Primary product visuals | Improves customer confidence | Must Have | All, Admin, Store Manager | Media management |
+| Product Gallery | Multiple images per product | Supports better product understanding | Should Have | All | Media management |
+| Product Descriptions | Clear product details, usage, benefits, and brand notes | Supports purchase decisions | Must Have | All, Admin, Store Manager | Product management |
+| Nutritional Information | Nutrition facts for health-conscious buyers | Supports compliance and informed choice | Must Have | All | Product data |
+| Ingredients | Ingredient lists and allergen notes | Builds trust and supports compliance | Must Have | All | Product data |
+| Stock Availability | Show in stock, low stock, out of stock statuses | Prevents failed orders and improves transparency | Must Have | All | Inventory management |
+| Product Reviews | Customer ratings and reviews | Builds social proof | Should Have | Customer, Admin | Review moderation |
+| Related Products | Suggest similar or complementary items | Increases basket size | Should Have | All | Recommendation rules |
+| Featured Products | Highlight key products | Supports merchandising and campaigns | Should Have | All, Marketing Manager | Promotion/content management |
+| Best Sellers | Show top-performing products | Improves conversion with social proof | Should Have | All | Sales analytics |
+| New Arrivals | Highlight newly launched products | Supports product launches | Should Have | All | Product tagging |
+
+## 5. Shopping Cart Features
+
+| Feature Name | Description | Business Value | Priority | User Roles | Dependencies |
+|---|---|---|---|---|---|
+| Add to Cart | Add selected products to the cart | Core purchase action | Must Have | Guest, Customer | Catalogue |
+| Update Quantities | Increase or decrease quantities in cart | Improves buying flexibility | Must Have | Guest, Customer | Cart engine |
+| Remove Products | Remove unwanted items | Improves user control | Must Have | Guest, Customer | Cart engine |
+| Save for Later | Move products from cart to a saved list | Reduces abandonment and supports later conversion | Should Have | Customer | Account/Wishlist |
+| Coupon Codes | Apply promotional discount codes | Supports marketing campaigns | Must Have | Guest, Customer | Promotion engine |
+| Automatic Discount Calculation | Apply campaign logic automatically | Improves user experience and reduces errors | Must Have | Guest, Customer | Promotion engine |
+| Shipping Cost Estimation | Estimate shipping before checkout | Reduces surprises and abandonment | Must Have | Guest, Customer | Shipping rules |
+| Tax Calculation | Calculate applicable taxes | Supports compliance and order accuracy | Must Have | Guest, Customer | Tax engine |
+| Cart Summary | Show subtotal, discount, shipping, tax, and total | Improves checkout transparency | Must Have | Guest, Customer | Cart, shipping, tax |
+
+## 6. Checkout Features
+
+| Feature Name | Description | Business Value | Priority | User Roles | Dependencies |
+|---|---|---|---|---|---|
+| Guest Checkout | Allow purchase without account creation | Reduces checkout friction | Must Have | Guest | Checkout flow |
+| Customer Checkout | Faster checkout for logged-in users | Improves repeat conversions | Must Have | Customer | Account module |
+| Delivery Information | Capture recipient name, address, and contact details | Required for fulfilment | Must Have | Guest, Customer | Address management |
+| Billing Information | Capture billing details for payment/invoice | Required for transactions | Must Have | Guest, Customer | Payment flow |
+| Multiple Payment Methods | Offer different payment options | Increases conversion and customer convenience | Must Have | Guest, Customer | Payment gateway integrations |
+| Shipping Method Selection | Select standard, express, or other delivery methods | Improves fulfilment flexibility | Should Have | Guest, Customer | Shipping configuration |
+| Order Review | Final summary before placing order | Reduces order errors | Must Have | Guest, Customer | Cart, payment, shipping |
+| Order Confirmation | Display confirmation page after successful order | Builds trust and closes purchase flow | Must Have | Guest, Customer | Order management |
+| Email Notifications | Send order confirmation and related updates | Improves communication and service | Must Have | Guest, Customer, Admin | Notification service |
+
+## 7. Payment Features
+
+| Feature Name | Description | Business Value | Priority | User Roles | Dependencies |
+|---|---|---|---|---|---|
+| Credit/Debit Card Payments | Accept Visa, MasterCard, and other supported cards | Standard online payment method | Must Have | Guest, Customer | Payment gateway |
+| Sri Lankan Payment Gateways | Support local gateways commonly used in Sri Lanka | Improves local payment success rates | Must Have | Guest, Customer | Gateway vendor integration |
+| Bank Transfer | Manual bank transfer option with instructions | Useful for some customer segments and B2B orders | Should Have | Guest, Customer | Payment reconciliation workflow |
+| Cash on Delivery | Allow payment upon delivery where operationally feasible | Builds trust for selected customers | Nice to Have | Guest, Customer | Delivery operations |
+| Secure Payment Processing | Tokenized and compliant transaction flow | Protects customers and business | Must Have | Guest, Customer, Admin | SSL, gateway, security controls |
+
+## 8. Customer Account Features
+
+| Feature Name | Description | Business Value | Priority | User Roles | Dependencies |
+|---|---|---|---|---|---|
+| Registration | Create customer account | Enables retention and personalization | Must Have | Guest | User management |
+| Login | Secure sign-in for customers | Enables account access | Must Have | Customer | Authentication |
+| Forgot Password | Reset password securely | Improves supportability and access recovery | Must Have | Customer | Email service |
+| Profile Management | Update name, phone, and preferences | Improves customer self-service | Must Have | Customer | Account module |
+| Address Management | Save and edit delivery/billing addresses | Speeds up repeat checkout | Must Have | Customer | Account module |
+| Order Tracking | View order status and shipment progress | Improves post-purchase transparency | Must Have | Customer | Order/shipping integration |
+| Order History | View past purchases | Supports repeat orders and service | Must Have | Customer | Order management |
+| Wishlist | Save favorite items | Supports remarketing and repeat sales | Should Have | Customer | Wishlist module |
+| Saved Payment Methods | Store tokenized cards securely where supported | Speeds up repeat checkout | Nice to Have | Customer | Payment gateway tokenization |
+| Newsletter Subscription | Subscribe/unsubscribe to marketing communications | Supports retention marketing | Should Have | Customer | Email marketing platform |
+
+## 9. Promotions and Marketing Features
+
+| Feature Name | Description | Business Value | Priority | User Roles | Dependencies |
+|---|---|---|---|---|---|
+| Discount Codes | Create and apply promo codes | Supports campaign tracking and sales uplift | Must Have | Guest, Customer, Marketing Manager, Admin | Promotion engine |
+| Coupon Management | Admin interface to create, edit, and deactivate coupons | Improves campaign control | Must Have | Admin, Marketing Manager | Promotion engine |
+| Percentage Discounts | Offer percentage-based discounts | Flexible campaign option | Must Have | Marketing Manager, Admin | Promotion engine |
+| Fixed Amount Discounts | Offer fixed monetary discounts | Supports targeted promotions | Must Have | Marketing Manager, Admin | Promotion engine |
+| Buy One Get One (BOGO) | Auto-apply quantity-based offers | Drives volume purchases | Should Have | Marketing Manager, Admin, Customer | Promotion rules engine |
+| Bundle Offers | Discount grouped products or combo packs | Increases average order value | Should Have | Marketing Manager, Admin, Customer | Product bundling rules |
+| Seasonal Campaigns | Promotions for Avurudu, festive, or health campaigns | Supports planned revenue peaks | Should Have | Marketing Manager, Admin | Banner/CMS/promotion engine |
+| Flash Sales | Time-limited high-urgency promotions | Drives quick conversions | Nice to Have | Marketing Manager, Admin, Customer | Promotion timer logic |
+| Limited-Time Promotions | Schedule offers with start and end dates | Enables campaign governance | Must Have | Marketing Manager, Admin | Promotion scheduler |
+| Free Shipping Promotions | Offer delivery discounts above conditions | Increases order conversion | Should Have | Marketing Manager, Admin, Customer | Shipping rules |
+| Product-Specific Promotions | Apply offers to individual products | Supports tactical merchandising | Must Have | Marketing Manager, Admin | Product mapping |
+| Category Promotions | Apply offers to categories | Enables broader campaign control | Should Have | Marketing Manager, Admin | Category mapping |
+| Customer-Specific Promotions | Special offers for selected segments or VIP customers | Supports retention and personalization | Nice to Have | Marketing Manager, Admin, Customer | Customer segmentation |
+| Loyalty Rewards | Reward repeat customers with points or discounts | Improves customer retention | Nice to Have | Marketing Manager, Customer, Admin | Loyalty engine |
+| Referral Program | Incentivize customers to refer others | Supports low-cost customer acquisition | Nice to Have | Marketing Manager, Customer, Admin | Referral tracking |
+| Gift Vouchers | Sell or issue redeemable voucher codes | Supports gifting and campaigns | Should Have | Customer, Admin, Marketing Manager | Voucher management |
+| Promotional Banners | Manage hero and campaign banners across pages | Drives campaign visibility | Must Have | Marketing Manager, Admin | CMS/banner manager |
+| Homepage Campaign Management | Control featured campaigns on home page | Supports agile merchandising | Must Have | Marketing Manager, Admin | CMS, banner manager |
+| Countdown Timers | Display offer expiry countdowns | Adds urgency to promotions | Nice to Have | Customer, Marketing Manager | Front-end timer logic |
+| Featured Products | Highlight priority products in campaign areas | Increases product visibility | Should Have | Marketing Manager, Admin | Product tagging |
+| Email Marketing Integration | Sync customers and campaign triggers to email tools | Supports lifecycle marketing | Should Have | Marketing Manager, Admin | Third-party email platform |
+
+## 10. Order Management
+
+| Feature Name | Description | Business Value | Priority | User Roles | Dependencies |
+|---|---|---|---|---|---|
+| Order Placement | Create order after successful checkout | Core revenue function | Must Have | Guest, Customer | Checkout, payments |
+| Order Processing | Internal workflow for validation, packing, and dispatch | Ensures fulfilment efficiency | Must Have | Admin, Store Manager | Order management system |
+| Order Status Updates | Track statuses such as pending, paid, packed, shipped, delivered, cancelled | Improves transparency and operations | Must Have | Customer, Admin, Store Manager | Order workflow |
+| Shipping Management | Assign couriers, tracking references, and dispatch details | Supports fulfilment execution | Must Have | Admin, Store Manager | Shipping integration |
+| Invoice Generation | Generate downloadable or emailable invoices | Supports finance and customer service | Should Have | Admin, Customer, Store Manager | Order and billing data |
+| Refund Management | Manage full or partial refunds | Supports customer service and compliance | Should Have | Admin, Store Manager | Payment gateway refund support |
+| Order Cancellation | Allow cancellation based on policy/state | Improves customer satisfaction | Should Have | Customer, Admin, Store Manager | Order rules |
+| Returns Management | Handle return requests and approvals | Supports post-purchase service | Nice to Have | Customer, Admin, Store Manager | Returns workflow |
+
+## 11. Inventory Management
+
+| Feature Name | Description | Business Value | Priority | User Roles | Dependencies |
+|---|---|---|---|---|---|
+| Product Management | Create, edit, publish, or retire products | Essential for catalogue control | Must Have | Admin, Store Manager | Admin panel |
+| Category Management | Create and manage product categories | Supports navigation and merchandising | Must Have | Admin, Store Manager | Admin panel |
+| Stock Tracking | Track available stock quantities by product/SKU | Prevents overselling | Must Have | Admin, Store Manager | Inventory module |
+| Low Stock Alerts | Notify team when stock falls below threshold | Reduces stockouts | Must Have | Admin, Store Manager | Notification engine |
+| Inventory Reports | Provide stock movement and availability reporting | Supports replenishment decisions | Should Have | Admin, Store Manager | Reporting module |
+| Bulk Product Import/Export | Upload or download product data in bulk | Improves operational efficiency | Should Have | Admin, Store Manager | CSV/excel import tools |
+
+## 12. Administration Features
+
+| Feature Name | Description | Business Value | Priority | User Roles | Dependencies |
+|---|---|---|---|---|---|
+| Dashboard | Overview of sales, orders, stock, and campaign performance | Improves management visibility | Must Have | Admin, Store Manager, Marketing Manager | Reporting engine |
+| User Management | Manage admin users and permissions | Supports access control | Must Have | Admin | Role-based access control |
+| Customer Management | View and manage customer records | Supports service and segmentation | Must Have | Admin, Store Manager | CRM/account data |
+| Product Management | Manage products, SKUs, media, pricing, and attributes | Core e-commerce administration | Must Have | Admin, Store Manager | Catalogue module |
+| Promotion Management | Manage discounts, coupons, bundles, and schedules | Supports revenue campaigns | Must Have | Admin, Marketing Manager | Promotion engine |
+| Order Management | View, update, and process orders | Supports fulfilment | Must Have | Admin, Store Manager | Order module |
+| Inventory Management | Manage stock and inventory settings | Prevents stock issues | Must Have | Admin, Store Manager | Inventory module |
+| CMS Pages | Manage static pages and content blocks | Reduces developer dependency for content changes | Should Have | Admin, Marketing Manager | CMS |
+| Banner Management | Upload and manage promotional banners | Supports rapid campaigns | Must Have | Admin, Marketing Manager | CMS/media library |
+| Blog Management | Create and manage articles/recipes | Supports SEO and content marketing | Should Have | Admin, Marketing Manager | Blog module |
+| Reports | View business and operational reports | Enables data-driven decisions | Must Have | Admin, Store Manager, Marketing Manager | Reporting engine |
+| Settings | Configure business rules and site options | Central platform control | Must Have | Admin | Admin core |
+| Payment Configuration | Manage gateways and payment options | Required for transactions | Must Have | Admin | Payment integrations |
+| Shipping Configuration | Set delivery zones, rates, and methods | Required for fulfilment | Must Have | Admin | Shipping engine |
+| Tax Configuration | Configure tax rules and rates | Required for order accuracy | Must Have | Admin | Tax engine |
+
+## 13. Reports and Analytics
+
+| Feature Name | Description | Business Value | Priority | User Roles | Dependencies |
+|---|---|---|---|---|---|
+| Sales Reports | Orders and sales by date, channel, and status | Measures commercial performance | Must Have | Admin, Store Manager | Order data |
+| Revenue Reports | Revenue, net sales, discounts, and refunds | Supports financial tracking | Must Have | Admin | Sales and refund data |
+| Product Performance | Product-level sales and views | Supports merchandising decisions | Should Have | Admin, Store Manager, Marketing Manager | Analytics + sales data |
+| Customer Analytics | Customer segments, repeat rate, and buying behaviour | Supports retention strategy | Should Have | Admin, Marketing Manager | Customer/order data |
+| Conversion Rates | Measure visitor-to-buyer performance | Supports UX and campaign optimisation | Should Have | Admin, Marketing Manager | Web analytics |
+| Promotion Effectiveness | Measure coupon usage, uplift, and revenue impact | Supports campaign optimisation | Should Have | Admin, Marketing Manager | Promotion + sales data |
+| Inventory Reports | Stock aging, movement, and low stock trends | Supports procurement planning | Should Have | Admin, Store Manager | Inventory data |
+| Website Traffic Integration | Integrate with analytics tools for session and source tracking | Supports digital marketing insight | Must Have | Admin, Marketing Manager | Google Analytics/Tag Manager |
+| Top-Selling Products | Identify best-performing products | Guides merchandising and production | Should Have | Admin, Store Manager | Sales data |
+| Customer Retention | Track repeat customers and lifetime value indicators | Supports growth planning | Nice to Have | Admin, Marketing Manager | Customer analytics |
+
+## 14. Notification Features
+
+| Feature Name | Description | Business Value | Priority | User Roles | Dependencies |
+|---|---|---|---|---|---|
+| Order Confirmation Emails | Email after successful order placement | Improves trust and reduces support queries | Must Have | Customer, Guest, Admin | Email service |
+| Shipping Updates | Notify when order is dispatched | Improves post-purchase visibility | Must Have | Customer | Order/shipping workflow |
+| Delivery Notifications | Notify when order is delivered | Improves service communication | Should Have | Customer | Shipping workflow |
+| Promotion Emails | Send marketing campaigns and offers | Supports retention and campaign ROI | Should Have | Marketing Manager, Customer | Email marketing integration |
+| Password Reset Emails | Send secure password reset links | Supports account recovery | Must Have | Customer | Authentication, email service |
+| Admin Alerts | Notify internal staff about key events or failures | Improves operational response | Should Have | Admin, Store Manager, Marketing Manager | Notification engine |
+| Low Stock Alerts | Notify staff when stock is near threshold | Prevents lost sales | Must Have | Admin, Store Manager | Inventory module |
+
+## 15. Non-Functional Requirements
+
+| Requirement | Description | Business Value | Priority | User Roles | Dependencies |
+|---|---|---|---|---|---|
+| Performance | Pages should load quickly and key flows should respond efficiently | Improves SEO, conversion, and user satisfaction | Must Have | All | Hosting, front-end optimisation |
+| Security | Protect user data, payments, and admin access using modern security controls | Protects brand and customer trust | Must Have | All | SSL, secure coding, gateway standards |
+| Scalability | Support growth in products, traffic, campaigns, and integrations | Reduces rework as business expands | Must Have | All | Cloud-ready architecture |
+| Availability | Ensure high uptime for shopping and admin functions | Protects revenue continuity | Must Have | All | Hosting/monitoring |
+| Accessibility | Meet accessibility best practices for diverse users | Improves inclusivity and compliance readiness | Should Have | All | UX/UI standards |
+| Mobile Responsiveness | Provide seamless mobile experience across devices | Critical for modern e-commerce traffic | Must Have | All | Responsive front-end |
+| SEO | Optimise content, metadata, URLs, schema, and speed | Improves organic traffic | Must Have | All | CMS, front-end, analytics |
+| Maintainability | Codebase and admin tools should support easy updates | Reduces long-term maintenance cost | Must Have | Internal Teams | Development standards |
+| Backup and Recovery | Regular backups and recovery processes | Protects business continuity and data integrity | Must Have | Internal Teams | Hosting/DevOps |
+
+## 16. Third-Party Integrations
+
+| Integration | Description | Business Value | Priority | User Roles | Dependencies |
+|---|---|---|---|---|---|
+| Payment Gateways | Connect with card and local payment providers | Enables online transactions | Must Have | Customer, Admin | Payment providers |
+| Google Analytics | Track traffic and user behaviour | Supports performance analysis | Must Have | Marketing Manager, Admin | Analytics setup |
+| Google Tag Manager | Centralized tag and event management | Improves marketing agility | Should Have | Marketing Manager, Admin | Analytics setup |
+| Meta Pixel | Track Meta ad performance and retargeting | Supports paid campaign optimisation | Should Have | Marketing Manager | Meta business assets |
+| Email Marketing Platforms | Connect with tools like Mailchimp, Klaviyo, or similar | Supports lifecycle and campaign marketing | Should Have | Marketing Manager | Subscriber sync |
+| SMS Gateway | Send order or campaign SMS messages | Improves communication reach | Nice to Have | Customer, Admin | SMS vendor |
+| Social Media Integration | Link products/content with Facebook, Instagram, YouTube, TikTok | Supports brand reach and engagement | Should Have | Customer, Marketing Manager | Social platforms |
+| Google Maps | Show location and contact details | Improves discoverability and trust | Should Have | Guest, Customer | Maps API |
+| Live Chat | Provide online assistance | Improves conversion and support | Nice to Have | Guest, Customer, Admin | Chat platform |
+| Customer Reviews | Integrate external or native review systems | Builds trust and social proof | Should Have | Customer, Admin | Review module/provider |
+
+## 17. Future Enhancements
+
+| Feature Name | Description | Business Value | Priority | User Roles | Dependencies |
+|---|---|---|---|---|---|
+| Mobile Application | Native or hybrid app for iOS/Android | Expands customer convenience and retention | Nice to Have | Customer | API layer |
+| Subscription Orders | Recurring delivery for repeat-purchase products | Supports predictable recurring revenue | Nice to Have | Customer, Admin | Subscription engine |
+| Loyalty Programme | Structured points and tier system | Increases repeat purchase behaviour | Nice to Have | Customer, Marketing Manager | Loyalty engine |
+| AI Product Recommendations | Personalized suggestions based on behaviour | Increases conversion and basket size | Nice to Have | Customer | Analytics/recommendation engine |
+| Multi-Language Support | Sinhala, Tamil, and English language options | Expands reach across audiences | Should Have | All | Localization framework |
+| Multi-Currency Support | Support LKR and other currencies for future markets | Enables international expansion | Nice to Have | Customer, Admin | Payment and pricing logic |
+| Wholesale Customer Portal | Dedicated B2B ordering and pricing area | Supports trade and bulk business | Nice to Have | Wholesale Customers, Admin | Role-based pricing |
+| Affiliate Programme | Enable partners/influencers to earn commissions | Supports growth marketing | Nice to Have | Marketing Manager, Partners | Affiliate tracking |
+| Marketplace Integration | Sync products/orders with external marketplaces | Expands sales channels | Nice to Have | Admin, Store Manager | Marketplace APIs |
+| Chatbot | Automated support and product guidance | Reduces support load and improves response time | Nice to Have | Guest, Customer | NLP/chat integration |
+| Gift Cards | Digital gift card issuance and redemption | Supports gifting and seasonal sales | Nice to Have | Customer, Admin | Voucher/gift card engine |
+| Product Subscriptions | Subscribe to selected products at regular intervals | Improves retention and repeat revenue | Nice to Have | Customer | Subscription engine |
+
+## 18. Key Assumptions
+
+- Initial launch will focus primarily on Sri Lankan customers and local fulfilment.
+- Final payment gateway selection will depend on commercial and technical availability.
+- Shipping policies, tax rules, and return policies will be finalized during detailed requirements.
+- UI/UX design will reflect Raala Kithul’s brand identity, natural product positioning, and mobile-first customer behaviour.
+- Promotions will be a central growth driver, especially for social media-led campaigns.
+
+## 19. Implementation Prioritisation Summary
+
+### Phase 1 - Minimum Viable E-commerce Launch
+
+- Brand website pages
+- Product catalogue
+- Search and filtering
+- Cart and checkout
+- Payment gateway integration
+- Customer accounts
+- Order management
+- Inventory basics
+- Promotions engine basics
+- Notifications
+- Analytics foundation
+
+### Phase 2 - Growth and Optimisation
+
+- Advanced promotions
+- Wishlist
+- Blog/recipes
+- Review system
+- Banner and campaign management enhancements
+- Improved reporting
+- Shipping and invoice enhancements
+
+### Phase 3 - Expansion and Innovation
+
+- Loyalty and referrals
+- Subscriptions
+- AI recommendations
+- Multi-language / multi-currency
+- Wholesale portal
+- Marketplace and affiliate integrations
+
+## 20. Conclusion
+
+This High-Level Feature Document provides the foundation for planning the Raala Kithul e-commerce website as a scalable digital commerce platform. It is intended to guide stakeholder alignment, solution architecture, UI/UX design, development estimation, sprint planning, and future roadmap discussions.
+
+The recommended direction is to deliver a strong Phase 1 e-commerce platform with core catalogue, checkout, promotion, and operational capabilities, while keeping the architecture flexible enough to support future brand growth, customer loyalty, and market expansion.
