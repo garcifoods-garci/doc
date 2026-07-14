@@ -1,0 +1,9 @@
+{
+  "label": "YouTube Videos",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "title": "Agentic AI YouTube Notes",
+    "description": "Video-based study notes for agentic AI learning."
+  }
+}
